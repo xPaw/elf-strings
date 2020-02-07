@@ -66,8 +66,6 @@ func main() {
 
 	defer r.Close()
 
-	fmt.Println(strings.Repeat("-", 16))
-
 	sections := []string{".dynstr", ".rodata", ".rdata",
 		".strtab", ".comment", ".note",
 		".stab", ".stabstr", ".note.ABI-tag", ".note.gnu.build-id"}
@@ -76,4 +74,3 @@ func main() {
 		ReadSection(r, section)
 	}
 }
-

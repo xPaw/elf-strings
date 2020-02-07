@@ -21,7 +21,7 @@ func UtilIsNice(str string) bool {
 	length := len(str)
 	spaces := 0
 
-	for _, char := range str  {
+	for _, char := range str {
 		if char == ' ' {
 			spaces++
 		}
